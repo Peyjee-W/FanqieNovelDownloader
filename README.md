@@ -28,15 +28,6 @@ cd NovelDownloader
 pip install -r requirements.txt
 ```
 
-### Packaging into an Executable
-
-The project uses `cx_Freeze` for packaging. Run the following command to generate an executable:
-
-```arduino
-python setup.py build
-```
-
-The packaged files will be generated in the `build` directory.
 
 ## Usage
 
