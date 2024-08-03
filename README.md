@@ -28,12 +28,11 @@ cd NovelDownloader
 pip install -r requirements.txt
 ```
 
-
 ## Usage
 
 ### Starting the Application
 
-After packaging, run the generated executable (e.g., `main.exe`) to start the application. Alternatively, in a development environment, you can directly run:
+After setting up the environment, you can start the application by running:
 
 ```css
 python main.py
@@ -46,9 +45,9 @@ python main.py
 3.  Click the "Update Book Status" button to check if there are new chapters available for the book.
 4.  Click the "Get Fun Fact" button to receive a random fun fact.
 
-### How to Obtain the Book ID
+### Obtaining the Book ID
 
-To obtain the book ID, navigate to the book's directory page on the website. For example, in the URL `https://fanqienovel.com/page/7216762831459665384`, the number `7216762831459665384` is the book ID. This ID is located at the end of the URL, following `/page/`.
+The Book ID can be found in the URL of the book's page. For example, in the URL `https://fanqienovel.com/page/7216762831459665384`, the part `7216762831459665384` is the Book ID.
 
 ## Project Structure
 
@@ -57,7 +56,6 @@ To obtain the book ID, navigate to the book's directory page on the website. For
 *   `file_utils.py`: File operations such as saving and loading novel chapters.
 *   `fun_facts.py`: Functions for fetching fun facts.
 *   `agreement.py`: Manages the user agreement dialog and logic.
-*   `setup.py`: Configuration file for packaging the application.
 
 ## Contributing
 
@@ -71,6 +69,10 @@ If you would like to contribute to this project, please fork the repository and 
 
 *   **Peyjee**  
     GitHub: [Peyjee-W](https://github.com/Peyjee-W)
+
+## Disclaimer
+
+This application is intended for personal use and educational purposes only. The developers are not responsible for any misuse of the application. Please respect copyright laws and the terms of service of the websites you interact with.
 
 ## License
 
