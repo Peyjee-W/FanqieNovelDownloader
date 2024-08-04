@@ -2,13 +2,14 @@
 
 ## Project Overview
 
-`NovelDownloader` is an application designed to download novels from a specific website. It provides a user-friendly interface where users can input a book ID to download the novel's content. The program supports pausing and resuming downloads and also offers interesting fun facts for entertainment.
+`NovelDownloader` is an application designed to download novels from a specific website. It provides a user-friendly interface where users can input a book ID to download the novel's content. The program supports pausing and resuming downloads and offers interesting fun facts for entertainment. Additionally, it can display the top five countries in the Olympic gold medal rankings.
 
 ## Features
 
 *   **Download Novels**: Enter the book ID to download the novel content.
 *   **Update Book Status**: Check if the book has new chapters available.
 *   **Fun Facts**: Get random fun facts for entertainment.
+*   **Olympic Medal Rankings**: View the top five countries in the Olympic gold medal rankings.
 *   **User Agreement**: Displays a user agreement at the start.
 
 ## Installation
@@ -44,6 +45,7 @@ python main.py
 2.  Enter the book ID and click the "Confirm" button to start the download.
 3.  Click the "Update Book Status" button to check if there are new chapters available for the book.
 4.  Click the "Get Fun Fact" button to receive a random fun fact.
+5.  Click the "Get Olympic Top 5" button to view the current top five countries in the Olympic gold medal rankings.
 
 ### Obtaining the Book ID
 
@@ -56,6 +58,7 @@ The Book ID can be found in the URL of the book's page. For example, in the URL 
 *   `file_utils.py`: File operations such as saving and loading novel chapters.
 *   `fun_facts.py`: Functions for fetching fun facts.
 *   `agreement.py`: Manages the user agreement dialog and logic.
+*   `olympic_utils.py`: Functions for fetching and displaying Olympic medal rankings.
 
 ## Contributing
 
