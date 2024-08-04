@@ -11,6 +11,7 @@ from download_utils import download_chapter_list, download_chapter_content
 from file_utils import save_chapters_to_file, load_existing_chapters
 from fun_facts import get_random_fun_fact
 from agreement import show_agreement
+from olympic_utils import display_top_5_olympic_medals
 
 class CustomLineEdit(QLineEdit):
     def contextMenuEvent(self, event):
@@ -72,12 +73,17 @@ class NovelDownloaderApp(QWidget):
         self.exit_button = QPushButton("退出", self)
         self.exit_button.clicked.connect(self.close)
 
+        # 添加获取奥运前五名按钮
+        self.olympic_button = QPushButton("获取奥运前五名", self)
+        self.olympic_button.clicked.connect(self.show_olympic_top_5)
+
         entry_layout = QHBoxLayout()
         entry_layout.addWidget(self.entry)
         entry_layout.addWidget(self.confirm_button)
 
         button_layout = QHBoxLayout()
         button_layout.addWidget(self.funfact_button)
+        button_layout.addWidget(self.olympic_button)  # 在小知识按钮旁添加奥运按钮
         button_layout.addWidget(self.github_button)
         button_layout.addWidget(self.refresh_button)
         button_layout.addWidget(self.pause_button)
@@ -167,6 +173,9 @@ class NovelDownloaderApp(QWidget):
             self.text_area.insertPlainText(char)
             QApplication.processEvents()
             time.sleep(speed)
+
+    def show_olympic_top_5(self):
+        display_top_5_olympic_medals(self.text_area)
 
     def open_github(self):
         try:
